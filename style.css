@@ -17,13 +17,25 @@ div.recipeLinks
     flex-direction: row;
     align-items: center;
     text-align: center;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
+    -ms-flex-align: center;
 }
 
-#baklava, #pizza, #sushi, #tacos
+div.recipeLinks a
 {
     text-decoration: none;
-    color: #307ef4;
-    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+div.recipeLinks a:hover
+{
+    background-color: #e76c14;
+    color: #fff;
 }
